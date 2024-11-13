@@ -5,9 +5,26 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
     ],
     "name": "clev",
-    "slug": "clev"
+    "slug": "clev",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "66c691de-38cc-49f6-8dd9-b682cc4a9ee0"
+      }
+    },
+    "android": {
+      "package": "com.raghav5443.clev"
+    }
   }
 }
